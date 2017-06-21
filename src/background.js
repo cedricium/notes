@@ -30,6 +30,7 @@ browser.storage.local.get('UID').then((data) => {
             object: 'webext-button-authenticate',
             method: 'click'
           });
+          handleAuthentication();
         });
       break;
     }

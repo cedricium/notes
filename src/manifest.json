@@ -20,6 +20,7 @@
   },
 
   "permissions": [
+    "identity",
     "storage",
     "https://ssl.google-analytics.com/collect"
   ],
@@ -27,6 +28,8 @@
   "background": {
     "scripts": [
       "vendor/testpilot-metrics.js",
+      "vendor/dist/fxa-crypto-relier.js",
+      "fxa-keys.js",
       "background.js"
     ]
   },
